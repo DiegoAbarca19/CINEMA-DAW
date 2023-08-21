@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* COLOR DEL FONDO */
+body {
+    background-color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#contenido {
+    float: left;
+    width: 70%;
+    background-color: #5e5e5e;
+}
+
+#contenido header {
+ padding: 32px;
+}
+
+.mivideo {
+    padding: 0 32px;
+    width: 100%;
+}
+
+header h1{
+    text-align: center;    
+}
+
+#contenido p {
+    padding: 32px;
+}
+
+aside p {
+    padding: 32px 0;
+}
+
+aside{
+    float: left;
+    width: 30%;
+    height: 1000px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+aside article {
+    margin-bottom: 60px;
+}
+
+aside article h2 {
+    padding-top: 48px;
+}
+
+footer{
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* menu */
+
+nav{
+    background-color: #1a1a1a;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+
+    position: absolute;
+    padding: 20px 30px;
+}
+
+nav ul{
+    
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: #4b4b4b;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+#banner{
+    background-image: url(../imgs/backcine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    display: inline;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1);
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 18px; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff; 
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2) rotate(20deg); 
+    background-color: #ffcc00; 
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; 
+  }
+  
+  .derechos-reservados {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  section article h2 {
+    color: #fff;
+    padding: 2rem;
+  }
+
+@media (max-width: 400px) {
+    #contenido {
+        width: 100%;
+        float: none;
+    }
+    aside {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* responsive menu */
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4b4b4b;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 4;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: #1a1a1a;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+
+    }
+
+   
+}
